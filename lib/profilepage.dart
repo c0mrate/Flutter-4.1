@@ -103,11 +103,9 @@ class ProfilePage extends StatelessWidget {
               const SizedBox(height: 20),
               DefaultButton(
                 text: "Save",
-                press: () => {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
-                  ),
+                press: () {
+                  int count = 0;
+                  Navigator.of(context).popUntil((_) => count++ >= 3);
                 },
               )
             ],
