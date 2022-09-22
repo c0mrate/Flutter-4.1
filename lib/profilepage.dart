@@ -105,7 +105,7 @@ class ProfilePage extends StatelessWidget {
                 text: "Save",
                 press: () {
                   int count = 0;
-                  Navigator.of(context).popUntil((_) => count++ >= 3);
+                  Navigator.of(context).popUntil((_) => count++ >= 2);
                 },
               )
             ],
